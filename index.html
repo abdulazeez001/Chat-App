@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/aminate.css">
+	<link rel="stylesheet" type="text/css" href="./css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="./css/ova.css">
+    <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+    
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <h3>Online users</h3>
+                    <ul class="list-group"  id="users">
+    
+                    </ul>
+                </div>    
+            </div> 
+            <div class="col-md-8">
+                <div class="chat" id="chat"></div>
+                <form action="" id="messageForm">
+                    <div class="form-group">
+                        <label for="">Enter Message</label>
+                        <textarea name="" id="message" cols="30" rows="10" class="form-control">
+
+                        </textarea>
+                        <br/>
+                        <input type="submit" class="btn btn-primary" value="Send Message">
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
